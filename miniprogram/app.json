@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/movie/movie",
+    "pages/comment/comment",
+    "pages/movieCome/movieCome",
+    "pages/homedetail/homedetail",
+    "pages/comedetail/comedetail"
+  ],
+  "window": {
+    "backgroundColor": "#E54847",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#E54847",
+    "navigationBarTitleText": "Eeyore",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#E54847",
+    "list": [{
+      "pagePath": "pages/movie/movie",
+      "text": "最新电影",
+      "iconPath": "images/film.png",
+      "selectedIconPath": "images/film-actived.png"
+    },
+    {
+      "pagePath": "pages/home/home",
+      "text": "最热电影",
+      "iconPath": "images/hot.png",
+      "selectedIconPath": "images/hot-actived.png"
+    },
+    {
+      "pagePath": "pages/movieCome/movieCome",
+      "text": "即将上映",
+      "iconPath": "images/movieCome.png",
+      "selectedIconPath": "images/movieCome-actived.png"
+    }
+    ]
+    
+  },
+  "sitemapLocation": "sitemap.json"
+}

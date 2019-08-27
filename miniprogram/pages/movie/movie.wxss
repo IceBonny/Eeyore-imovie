@@ -1,0 +1,42 @@
+view{
+  font-size: 28rpx;line-height: 55rpx;
+}
+
+.movie{
+  height: auto;
+  display: flex;
+  padding: 15rpx;
+  border-bottom: 1px solid #ccc;
+}
+.movie-img{
+  width: 220rpx;
+  height: auto;
+  margin-right: 20rpx;
+  box-shadow: 5rpx 5rpx 5rpx rgba(241, 140, 46, 0.774);
+}
+.movie-info{
+  flex: 1;
+  margin-left: 10rpx;
+  width: 90%;
+}
+.movie-title{
+  color: #666;
+  font-size: 38rpx;
+  font-weight: bolder;
+  line-height: 50rpx;
+  margin-bottom: 20rpx;
+}
+.movie-score{
+  color: #faaf00;
+  font-size: 32rpx;font-weight: bold;
+}
+
+.movie-comment{
+  background-color: red;
+  color: #fff;
+  width: 120rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  margin-right: 40rpx;
+}

@@ -1,0 +1,33 @@
+<view class=''>
+  <view class='detail-container' style='background: url({{detail.images.large}}) no-repeat  top/cover'></view>
+  <view class='detail-info'>
+    <image src="{{detail.images.large}}" class='detail-img'></image>
+  </view>
+  <view class='detail'>
+      <view class='detail-nm'>{{detail.title}}</view>
+      <view class='detail.sc'>评分：{{detail.rating.average}}</view>
+      <view>地区：{{detail.countries[0]}}</view>
+      <view>导演：{{detail.directors[0].name}}</view>
+       <view  class="text-name">主演:<text wx:key="{{index}}" wx:for="{{detail.casts}}">|{{ item.name }} </text></view>
+    </view>
+  <view class="summary-title">摘要:</view>
+  <view class='desc'>{{detail.summary}}</view>
+  <view class="main-avatars">主要演员:</view>
+  <view class="avatars-grip">
+    <view  wx:for="{{detail.casts }}" class="avatars-wrap">
+      <image src="{{item.avatars.small}}" class='avatars-img'></image>
+    </view>
+  </view>
+
+  <!-- 评价 -->
+  <view class="comment-container">
+    <view class="v-rate">评分：<van-rate value="{{score}}" bind:change="onScoreChange" icon="like"  void-icon="like-o" /></view>
+    <van-field value="{{ content }}" placeholder="写下你对本电影的评价吧" bind:change="onContentChange" class="text-comment"/>
+    <van-button type="warning" bindtap="uploadImg" class="btn-img" round>上传图片</van-button>
+    <view>
+      <image class="comment-img" src="{{item}}" wx:for="{{images}}" wx:key="{{index}}"></image>
+    </view>
+    <van-button size="large" type="danger" bindtap="submit" class="btn-sub" round>提交评价</van-button>
+  </view>
+
+</view>

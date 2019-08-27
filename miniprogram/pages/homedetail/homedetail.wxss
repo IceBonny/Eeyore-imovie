@@ -1,0 +1,85 @@
+.detail-container {
+  width: 100%;
+  height: 100%;
+  filter: blur(1rpx);
+  opacity: 0.3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.detail-img {
+  width: 520rpx; height: 720rpx;
+  border-radius: 20rpx;
+  box-shadow: 6rpx 6rpx 6rpx #000;
+}
+
+.detail-info {
+  width: 70%;
+  height: auto;
+  margin: 20rpx auto;
+}
+
+.detail view {
+  height: 60rpx;line-height: 60rpx;
+  color: #222;
+  font-size: 32rpx;
+  display: flex;
+  justify-content: left;
+  width: 60%;margin: 0 auto;
+  }
+
+
+.detail .detail-nm {
+  font-size: 40rpx;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+.text-name{
+  width: 100%;
+  margin-bottom: 60rpx;
+  height: 100rpx;
+}
+
+.summary-title,.desc{
+  width: 80%;
+  margin: 60rpx auto;
+
+}
+.summary-title{
+  color: #000;
+  font-size: 34rpx;
+  font-weight: 700;
+}
+.desc {
+  color: #333;
+  font-size: 30rpx;
+  text-indent: 60rpx;
+  line-height: 45rpx;
+}
+.main-avatars{
+  display: flex;justify-content: center;
+}
+.avatars-grip{
+  width: 84%;
+  height: auto;
+  margin: 20rpx auto;
+}
+.avatars-wrap{
+  width:auto;
+  margin:0 auto;
+  overflow: hidden;
+  display: inline-block
+  
+}
+.avatars-img{
+  width: 220rpx; 
+  margin: 20rpx 40rpx;
+  height: 340rpx;
+  border-radius: 20rpx;
+  border: 5rpx solid rgb(252, 217, 101);
+ 
+
+}

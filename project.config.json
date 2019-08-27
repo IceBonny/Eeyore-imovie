@@ -1,0 +1,79 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"enhance": false,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"uglifyFileName": true
+	},
+	"appid": "wxba6fef7e006bf2a9",
+	"projectname": "imovie",
+	"libVersion": "2.2.5",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"compileType": "miniprogram",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "pages/movie/movie",
+					"pathName": "pages/movie/movie",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "comment",
+					"pathName": "pages/comment/comment",
+					"query": "movieid=26581837",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/movieCome/movieCome",
+					"pathName": "pages/movieCome/movieCome",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

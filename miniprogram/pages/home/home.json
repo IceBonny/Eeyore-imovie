@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-notice-bar": "vant-weapp/notice-bar",
+    "van-tab": "vant-weapp/tab",
+    "van-tabs": "vant-weapp/tabs",
+    "van-collapse": "vant-weapp/collapse",
+    "van-collapse-item": "vant-weapp/collapse-item",
+    "van-toast": "vant-weapp/dialog"
+  }
+}
+

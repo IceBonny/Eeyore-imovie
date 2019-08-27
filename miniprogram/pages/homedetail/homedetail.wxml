@@ -1,0 +1,21 @@
+<view class=''>
+  <view class='detail-container' style='background: url({{detail.images.large}}) no-repeat  top/cover'></view>
+  <view class='detail-info'>
+    <image src="{{detail.images.large}}" class='detail-img'></image>
+  </view>
+  <view class='detail'>
+      <view class='detail-nm'>{{detail.title}}</view>
+      <view class='detail.sc'>评分：{{detail.rating.average}}</view>
+      <view>地区：{{detail.countries[0]}}</view>
+      <view>导演：{{detail.directors[0].name}}</view>
+       <view  class="text-name">主演:<text wx:key="{{index}}" wx:for="{{detail.casts}}">|{{ item.name }} </text></view>
+    </view>
+  <view class="summary-title">摘要:</view>
+  <view class='desc'>{{detail.summary}}</view>
+  <view class="main-avatars">主要演员:</view>
+  <view class="avatars-grip">
+    <view  wx:for="{{detail.casts }}" class="avatars-wrap">
+      <image src="{{item.avatars.small}}" class='avatars-img'></image>
+    </view>
+  </view>
+</view>

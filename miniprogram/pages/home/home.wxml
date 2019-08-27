@@ -1,0 +1,58 @@
+<van-notice-bar
+  mode="closeable"
+  text="“希望是美好的，也许是人间至善，而美好的事物永不消逝。”——《肖申克的救赎》“开拓视野，冲破艰险，看见世界，身临其境，贴近彼此，感受生活，这就是生活的目的。”——《白日梦想家》“人生和电影不一样，人生辛苦多了。”——《天堂电影院》"/>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" autoplay="{{autoplay}}" circular="{{circular}}" class="swiper-slide">
+  <block wx:for="{{imgUrls}}"   wx:key="{{index}}">
+    <swiper-item  class="swiper-item">
+      <image src="{{item}}" class="slide-image" mode="widthFix"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<van-tabs swipeable>
+  <van-tab title="🔥豆瓣电影Top250" class="topmovie">
+    <view class="movie" wx:for="{{movieHome}}" wx:key="{{index}}">
+      <image class="movie-img" src="{{item.images.small}}"></image>
+      <view class="movie-info">
+        <view class="movie-title">{{item.title}}</view>
+        <view>观众评分：
+          <text class="movie-score"> {{item.rating.average}}分</text>
+        </view>
+        <view>主演：
+          <text wx:key="{{index}}" wx:for="{{item.casts}}">{{item.name}}  </text>
+        </view>
+        <view class="movie-year">年份: {{item.year}}</view>
+        <button bindtap="gotohomeDetail" data-movieid="{{item.id}}" class="movie-detail">电影详情</button>
+      </view>
+    </view>
+  </van-tab>
+   <van-tab title="🍬关于作者" class="about">
+   <van-dialog
+            use-slot
+            title="ヾ(•ω•`)o我滴微信"
+            show="{{show}}"
+            show-cancel-button
+            confirm-button-open-type="getUserInfo"
+            bind:close="onClose"
+            bind:getuserinfo="getUserInfo">
+      <!-- <image src="/images/wx.png" /> -->
+   </van-dialog>
+    <view class='about-container'></view>
+       <van-collapse value="{{ activeNames }}" bind:change="onChange"  wx:for="{{proFile}}">
+          <van-collapse-item name="1" class="profile">
+              <view slot="title">😀这是一个有趣的自我介绍<van-icon name="question-o" /></view>
+              {{item.intro}}
+          </van-collapse-item>
+          <van-collapse-item title="🌸(/ω＼*)……… (/ω•＼*)" name="2" class="van-collapse">
+             <image src="{{item.src}}" class="pro-img"></image>
+             <view class="pro-main">{{item.main}}</view>
+             <view class="pro-name">{{item.name}}</view>
+             <view class="pro-blog">{{item.blog}}</view>
+          </van-collapse-item>
+          <van-collapse-item title="🙄你猜我猜你猜不猜" name="3">
+              {{item.text}}
+          </van-collapse-item>
+      </van-collapse>
+  </van-tab>
+</van-tabs>
